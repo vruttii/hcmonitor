@@ -1,8 +1,69 @@
-{% extends 'layout.html' %}
+<!doctype html>
+<html lang="en">
 
-{% block title %}Heart Disease Prediction{% endblock %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <link rel="stylesheet" href="./static/style.css">
+
+
+
+  <title>HeartCheck</title>
+</head>
+
+
+ <!--<section class="hero is-warning is-bold"> -->
+<body>
+	
+    <div class="hero-body">
+      <div class="container">
+        
+          <img src="./static/logo-text.png" alt="HeartCheck"  width="1280vh" height="200vh">
+        
+      </div>
+    </div>
+  
+  <div 
+  <section id="img" class="section">
+    
+    <div class="container" >
+     <p style="position: absolute;bottom: 50%,top: 50%,transform: translate(-50%,50%);">
+      <h1 class="title is-size-3-tablet is-size-4-mobile has-text-centered">
+        <i class="fas fa-heartbeat"></i>
+       
+        HeartCheck Monitor
+      </h1>
+
+    
+    </div>
+   </p>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      
+
+      <p class="disclaimer is-size-7">
+        <em>
+          * Note that this tool is for informational purposes only and does not
+            constitute medical advice. Please consult your doctor.
+        </em>
+      </p>
+    </div>
+   
+  </footer>
+</div>
+
+
+
+Heart Disease Prediction
+
+
 
 <form method="post" action="./process_form">
   <div class="columns">
@@ -176,5 +237,6 @@ Familial Hypertrophic Cardiomyopathy(Hereditary heart problems)</label>
     
     </div>
   </div>
-</form>
-{% endblock %}
+
+</body>
+</html>
